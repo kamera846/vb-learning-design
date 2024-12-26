@@ -22,13 +22,14 @@ Partial Class LoginPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginPage))
         Me.FormPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.FormTitle = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2Button()
         Me.LoginButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PasswordInput = New Guna.UI2.WinForms.Guna2TextBox()
         Me.UsernameInput = New Guna.UI2.WinForms.Guna2TextBox()
         Me.MiraswiftLogo = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.FormTitle = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.FormPanel.SuspendLayout()
         CType(Me.MiraswiftLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -57,6 +58,21 @@ Partial Class LoginPage
         Me.FormPanel.Size = New System.Drawing.Size(250, 440)
         Me.FormPanel.TabIndex = 0
         Me.FormPanel.UseTransparentBackground = True
+        '
+        'FormTitle
+        '
+        Me.FormTitle.AutoSize = False
+        Me.FormTitle.AutoSizeHeightOnly = True
+        Me.FormTitle.BackColor = System.Drawing.Color.Transparent
+        Me.FormTitle.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.FormTitle.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.FormTitle.Location = New System.Drawing.Point(44, 120)
+        Me.FormTitle.Margin = New System.Windows.Forms.Padding(32, 62, 32, 32)
+        Me.FormTitle.Name = "FormTitle"
+        Me.FormTitle.Size = New System.Drawing.Size(162, 29)
+        Me.FormTitle.TabIndex = 0
+        Me.FormTitle.Text = "LOGIN"
+        Me.FormTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'CloseButton
         '
@@ -187,21 +203,6 @@ Partial Class LoginPage
         Me.MiraswiftLogo.TabStop = False
         Me.MiraswiftLogo.UseTransparentBackground = True
         '
-        'FormTitle
-        '
-        Me.FormTitle.AutoSize = False
-        Me.FormTitle.AutoSizeHeightOnly = True
-        Me.FormTitle.BackColor = System.Drawing.Color.Transparent
-        Me.FormTitle.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
-        Me.FormTitle.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.FormTitle.Location = New System.Drawing.Point(44, 120)
-        Me.FormTitle.Margin = New System.Windows.Forms.Padding(32, 62, 32, 32)
-        Me.FormTitle.Name = "FormTitle"
-        Me.FormTitle.Size = New System.Drawing.Size(162, 29)
-        Me.FormTitle.TabIndex = 0
-        Me.FormTitle.Text = "LOGIN"
-        Me.FormTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'LoginPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -216,6 +217,7 @@ Partial Class LoginPage
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "LoginPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
