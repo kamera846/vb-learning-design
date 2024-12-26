@@ -24,6 +24,7 @@ Partial Class LoginPage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginPage))
         Me.FormPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.FormDescription = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.FormTitle = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2Button()
         Me.LoginButton = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -41,6 +42,7 @@ Partial Class LoginPage
         Me.FormPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.FormPanel.BorderRadius = 12
         Me.FormPanel.CausesValidation = False
+        Me.FormPanel.Controls.Add(Me.FormDescription)
         Me.FormPanel.Controls.Add(Me.FormTitle)
         Me.FormPanel.Controls.Add(Me.CloseButton)
         Me.FormPanel.Controls.Add(Me.LoginButton)
@@ -59,6 +61,21 @@ Partial Class LoginPage
         Me.FormPanel.TabIndex = 0
         Me.FormPanel.UseTransparentBackground = True
         '
+        'FormDescription
+        '
+        Me.FormDescription.AutoSize = False
+        Me.FormDescription.AutoSizeHeightOnly = True
+        Me.FormDescription.BackColor = System.Drawing.Color.Transparent
+        Me.FormDescription.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.FormDescription.ForeColor = System.Drawing.Color.DimGray
+        Me.FormDescription.Location = New System.Drawing.Point(44, 123)
+        Me.FormDescription.Margin = New System.Windows.Forms.Padding(32, 0, 32, 32)
+        Me.FormDescription.Name = "FormDescription"
+        Me.FormDescription.Size = New System.Drawing.Size(162, 31)
+        Me.FormDescription.TabIndex = 1
+        Me.FormDescription.Text = "jadilah lebih produktif dari manasaja!."
+        Me.FormDescription.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'FormTitle
         '
         Me.FormTitle.AutoSize = False
@@ -66,12 +83,12 @@ Partial Class LoginPage
         Me.FormTitle.BackColor = System.Drawing.Color.Transparent
         Me.FormTitle.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.FormTitle.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.FormTitle.Location = New System.Drawing.Point(44, 120)
-        Me.FormTitle.Margin = New System.Windows.Forms.Padding(32, 62, 32, 32)
+        Me.FormTitle.Location = New System.Drawing.Point(44, 94)
+        Me.FormTitle.Margin = New System.Windows.Forms.Padding(32, 62, 32, 0)
         Me.FormTitle.Name = "FormTitle"
         Me.FormTitle.Size = New System.Drawing.Size(162, 29)
         Me.FormTitle.TabIndex = 0
-        Me.FormTitle.Text = "LOGIN"
+        Me.FormTitle.Text = "MAS,"
         Me.FormTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'CloseButton
@@ -81,7 +98,7 @@ Partial Class LoginPage
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.BackgroundImage = Global.LearningDesign.My.Resources.Resources.close_fill
         Me.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CloseButton.BorderColor = System.Drawing.Color.DimGray
+        Me.CloseButton.BorderColor = System.Drawing.Color.Transparent
         Me.CloseButton.BorderRadius = 4
         Me.CloseButton.BorderThickness = 1
         Me.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand
@@ -93,6 +110,7 @@ Partial Class LoginPage
         Me.CloseButton.FocusedColor = System.Drawing.Color.Transparent
         Me.CloseButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.CloseButton.ForeColor = System.Drawing.Color.Transparent
+        Me.CloseButton.HoverState.BorderColor = System.Drawing.Color.Brown
         Me.CloseButton.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CloseButton.Location = New System.Drawing.Point(218, 32)
         Me.CloseButton.Margin = New System.Windows.Forms.Padding(0)
@@ -119,17 +137,18 @@ Partial Class LoginPage
         Me.LoginButton.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.LoginButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(139, Byte), Integer))
         Me.LoginButton.HoverState.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
-        Me.LoginButton.Location = New System.Drawing.Point(12, 301)
-        Me.LoginButton.Margin = New System.Windows.Forms.Padding(0, 0, 0, 62)
+        Me.LoginButton.Location = New System.Drawing.Point(12, 308)
+        Me.LoginButton.Margin = New System.Windows.Forms.Padding(0)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(226, 45)
-        Me.LoginButton.TabIndex = 3
-        Me.LoginButton.Text = "MASUK"
+        Me.LoginButton.TabIndex = 4
+        Me.LoginButton.Text = "Oke, GAS!"
         '
         'PasswordInput
         '
         Me.PasswordInput.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PasswordInput.Animated = True
         Me.PasswordInput.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.PasswordInput.BorderColor = System.Drawing.Color.Gainsboro
         Me.PasswordInput.BorderRadius = 6
@@ -142,25 +161,26 @@ Partial Class LoginPage
         Me.PasswordInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PasswordInput.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.PasswordInput.ForeColor = System.Drawing.Color.Black
-        Me.PasswordInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PasswordInput.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue
         Me.PasswordInput.IconLeft = Global.LearningDesign.My.Resources.Resources.lock_line
         Me.PasswordInput.IconLeftSize = New System.Drawing.Size(16, 16)
-        Me.PasswordInput.Location = New System.Drawing.Point(12, 231)
+        Me.PasswordInput.Location = New System.Drawing.Point(12, 238)
         Me.PasswordInput.Margin = New System.Windows.Forms.Padding(0, 0, 0, 32)
         Me.PasswordInput.Name = "PasswordInput"
         Me.PasswordInput.Padding = New System.Windows.Forms.Padding(8)
         Me.PasswordInput.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.PasswordInput.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.PasswordInput.PlaceholderText = "Password"
+        Me.PasswordInput.PlaceholderText = "Ketik passwordnya disini."
         Me.PasswordInput.SelectedText = ""
         Me.PasswordInput.Size = New System.Drawing.Size(226, 38)
-        Me.PasswordInput.TabIndex = 2
+        Me.PasswordInput.TabIndex = 3
         Me.PasswordInput.UseSystemPasswordChar = True
         '
         'UsernameInput
         '
         Me.UsernameInput.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UsernameInput.Animated = True
         Me.UsernameInput.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.UsernameInput.BorderColor = System.Drawing.Color.Gainsboro
         Me.UsernameInput.BorderRadius = 6
@@ -173,19 +193,19 @@ Partial Class LoginPage
         Me.UsernameInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UsernameInput.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.UsernameInput.ForeColor = System.Drawing.Color.Black
-        Me.UsernameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.UsernameInput.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue
         Me.UsernameInput.IconLeft = Global.LearningDesign.My.Resources.Resources.user_line
         Me.UsernameInput.IconLeftSize = New System.Drawing.Size(16, 16)
-        Me.UsernameInput.Location = New System.Drawing.Point(12, 181)
+        Me.UsernameInput.Location = New System.Drawing.Point(12, 188)
         Me.UsernameInput.Margin = New System.Windows.Forms.Padding(0, 0, 0, 12)
         Me.UsernameInput.Name = "UsernameInput"
         Me.UsernameInput.Padding = New System.Windows.Forms.Padding(8)
         Me.UsernameInput.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UsernameInput.PlaceholderForeColor = System.Drawing.Color.DarkGray
-        Me.UsernameInput.PlaceholderText = "Type your username.."
+        Me.UsernameInput.PlaceholderText = "Ketik nama pengguna mu."
         Me.UsernameInput.SelectedText = ""
         Me.UsernameInput.Size = New System.Drawing.Size(226, 38)
-        Me.UsernameInput.TabIndex = 1
+        Me.UsernameInput.TabIndex = 2
         '
         'MiraswiftLogo
         '
@@ -235,4 +255,5 @@ Partial Class LoginPage
     Friend WithEvents LoginButton As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents FormTitle As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents FormDescription As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
