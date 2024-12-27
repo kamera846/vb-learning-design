@@ -3,7 +3,7 @@
         Close()
     End Sub
 
-    Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
+    Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
         Close()
     End Sub
 End Class

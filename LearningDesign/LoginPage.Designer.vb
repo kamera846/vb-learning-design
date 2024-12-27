@@ -24,8 +24,8 @@ Partial Class LoginPage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginPage))
         Me.FormPanel = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Copyright = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.CancelButton = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.FormDescription = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.FormTitle = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2Button()
@@ -44,8 +44,8 @@ Partial Class LoginPage
         Me.FormPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.FormPanel.BorderRadius = 12
         Me.FormPanel.CausesValidation = False
-        Me.FormPanel.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.FormPanel.Controls.Add(Me.Guna2GradientButton1)
+        Me.FormPanel.Controls.Add(Me.Copyright)
+        Me.FormPanel.Controls.Add(Me.CancelButton)
         Me.FormPanel.Controls.Add(Me.FormDescription)
         Me.FormPanel.Controls.Add(Me.FormTitle)
         Me.FormPanel.Controls.Add(Me.CloseButton)
@@ -65,48 +65,48 @@ Partial Class LoginPage
         Me.FormPanel.TabIndex = 0
         Me.FormPanel.UseTransparentBackground = True
         '
-        'Guna2HtmlLabel1
+        'Copyright
         '
-        Me.Guna2HtmlLabel1.AutoSize = False
-        Me.Guna2HtmlLabel1.AutoSizeHeightOnly = True
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.DimGray
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(12, 383)
-        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(0, 0, 0, 32)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(226, 16)
-        Me.Guna2HtmlLabel1.TabIndex = 6
-        Me.Guna2HtmlLabel1.Text = "@ 2024 Miraswift"
-        Me.Guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Copyright.AutoSize = False
+        Me.Copyright.AutoSizeHeightOnly = True
+        Me.Copyright.BackColor = System.Drawing.Color.Transparent
+        Me.Copyright.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.Copyright.ForeColor = System.Drawing.Color.DimGray
+        Me.Copyright.Location = New System.Drawing.Point(12, 383)
+        Me.Copyright.Margin = New System.Windows.Forms.Padding(0, 0, 0, 32)
+        Me.Copyright.Name = "Copyright"
+        Me.Copyright.Size = New System.Drawing.Size(226, 16)
+        Me.Copyright.TabIndex = 6
+        Me.Copyright.Text = "@ 2024 Miraswift"
+        Me.Copyright.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2GradientButton1
+        'CancelButton
         '
-        Me.Guna2GradientButton1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Guna2GradientButton1.Animated = True
-        Me.Guna2GradientButton1.BorderColor = System.Drawing.Color.Gainsboro
-        Me.Guna2GradientButton1.BorderRadius = 6
-        Me.Guna2GradientButton1.BorderThickness = 1
-        Me.Guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.WhiteSmoke
-        Me.Guna2GradientButton1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.Gray
-        Me.Guna2GradientButton1.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue
-        Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.White
-        Me.Guna2GradientButton1.HoverState.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
-        Me.Guna2GradientButton1.Location = New System.Drawing.Point(12, 291)
-        Me.Guna2GradientButton1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Me.Guna2GradientButton1.Size = New System.Drawing.Size(226, 45)
-        Me.Guna2GradientButton1.TabIndex = 5
-        Me.Guna2GradientButton1.Text = "Batal"
+        Me.CancelButton.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CancelButton.Animated = True
+        Me.CancelButton.BorderColor = System.Drawing.Color.Gainsboro
+        Me.CancelButton.BorderRadius = 6
+        Me.CancelButton.BorderThickness = 1
+        Me.CancelButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CancelButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.CancelButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.CancelButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.CancelButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.CancelButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.CancelButton.FillColor = System.Drawing.Color.WhiteSmoke
+        Me.CancelButton.FillColor2 = System.Drawing.Color.WhiteSmoke
+        Me.CancelButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.CancelButton.ForeColor = System.Drawing.Color.Gray
+        Me.CancelButton.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue
+        Me.CancelButton.HoverState.FillColor = System.Drawing.Color.White
+        Me.CancelButton.HoverState.FillColor2 = System.Drawing.Color.White
+        Me.CancelButton.HoverState.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.CancelButton.Location = New System.Drawing.Point(12, 291)
+        Me.CancelButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.CancelButton.Name = "CancelButton"
+        Me.CancelButton.Size = New System.Drawing.Size(226, 45)
+        Me.CancelButton.TabIndex = 5
+        Me.CancelButton.Text = "Batal"
         '
         'FormDescription
         '
@@ -302,6 +302,6 @@ Partial Class LoginPage
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents FormTitle As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents FormDescription As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Copyright As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents CancelButton As Guna.UI2.WinForms.Guna2GradientButton
 End Class
